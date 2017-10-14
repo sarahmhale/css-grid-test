@@ -1,0 +1,148 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 24;
+}
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 24;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14;
+}
+.container{
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 15%;
+  grid-template-areas:
+  "header header header header"
+  ". aboutMe aboutMe ."
+  "greyBackgroundLeft project project greyBackgroundRight"
+  ". contact contact .";
+
+}
+
+.contact h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.contact img {
+  padding:10px;
+  height: 60px;
+  width: 60px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.header img {
+  max-width: 100%;
+  max-height: 100vh;
+  height: auto;
+}
+.aboutMe {
+  grid-area: aboutMe ;
+  margin: 100px;
+}
+
+.aboutText {
+  float:left;
+  width: 40%;
+}
+
+.aboutText h1{
+  margin-bottom:10px;
+}
+.aboutImage {
+  float:right;
+  width: 50%;
+  height: auto;
+
+}
+
+.project {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #F7F8F8;
+  grid-area: project;
+}
+
+.project h1{
+  display: flex;
+  justify-content: center;
+}
+
+.projectItem {
+  background-color: white;
+  display: grid;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  grid-gap: 30px;
+  grid-template-columns: 40px 0.8fr 1.2fr 40px;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    ". projectImage projectText .";
+
+}
+.greyBackgroundRight {
+  grid-area: greyBackgroundRight;
+  background-color: #F7F8F8;
+}
+
+.greyBackgroundLeft {
+  grid-area: greyBackgroundLeft;
+  background-color: #F7F8F8;
+}
+
+.contact {
+  grid-area: contact;
+  padding-bottom: 40px;
+}
+
+.projectImage {
+  grid-area: projectImage;
+}
+
+.projectImage img {
+  height: auto;
+  width: 100%;
+}
+
+.projectText {
+  width: 100%;
+  grid-area: projectText;
+}
+.projectText h2 {
+  margin-bottom:10px;
+}
+.menu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu a{
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 20px;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+
+}
