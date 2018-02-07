@@ -122,8 +122,8 @@ p {
   background-color: white;
   display: grid;
   margin-top: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   grid-gap: 30px;
   grid-template-columns: 20px 0.8fr 1.2fr 20px;
   grid-template-rows: 1fr;
