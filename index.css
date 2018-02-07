@@ -68,7 +68,7 @@ p {
 
 .aboutMe {
   grid-area: aboutMe;
-  padding: 40px;
+  padding: 46px;
 }
 .aboutText {
   width: 100%;
@@ -125,7 +125,7 @@ p {
   padding-top: 40px;
   padding-bottom: 40px;
   grid-gap: 30px;
-  grid-template-columns: 40px 0.8fr 1.2fr 40px;
+  grid-template-columns: 20px 0.8fr 1.2fr 20px;
   grid-template-rows: 1fr;
   grid-template-areas: ". projectImage projectImage ." ". projectText projectText .";
 }
