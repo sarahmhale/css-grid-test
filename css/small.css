@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14;
+}
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "header"
+  "project"
+  "aboutMe."
+  "contact";
+
+}

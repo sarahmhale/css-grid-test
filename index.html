@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="index.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+  <link rel='stylesheet' media='screen and (min-width:100px) and (max-width: 700px)' href='css/small.css' />
   <link rel="stylesheet" href="index.css">
-  <title>CSS grid test</title>
+  <title>Sarah Hale</title>
 </head>
 <body>
   <div class="menu">
-    <a href="#aboutMe">ABOUT ME</a>
-    <a href="#project">PROJECT & WORK</a>
+    <a href="#aboutMe">ABOUT</a>
+    <a href="#project">PROJECTS</a>
     <a href="#contact">CONTACT</a>
+    <a href="#top"><img src="icons/up-arrow.svg" type="image/svg+xml"/></a>
   </div>
 
   <div class="container">
-    <div class="header">
+    <div class="header" id="top">
       <img src="images/fullsizeoutput_cb6.png" alt="SARAH HALE">
     </div>
 
     <div class="aboutMe" id="aboutMe">
       <div class="aboutText">
-        <h1>ABOUT ME</h1>
+        <h1>ABOUT</h1>
+        <div class="aboutImage">
+          <img src="images/sarah.svg" alt="SARAH HALE">
+        </div>
         <p>
           Bacon ipsum dolor amet pork chop t-bone jerky capicola shank ground round frankfurter hamburger turkey chuck pancetta. Pork chop swine rump, ground round chuck venison prosciutto bresaola pork pastrami. Doner jowl cow tongue brisket. Chicken t-bone ham ham hock, porchetta turkey cupim frankfurter pancetta chuck. Pork chop jerky short loin jowl tenderloin landjaeger ham. Shoulder drumstick cow, pancetta tail picanha turducken sirloin spare ribs</P>
       </div>
-      <div class="aboutImage">
-        <img src="images/sarah.svg" alt="SARAH HALE">
-      </div>
+
     </div>
     <div class="project" id="project">
-      <h1>PROJECTS & WORK</h1>
+      <h1>PROJECTS</h1>
 
       <div class="projectItem">
         <div class="projectImage">

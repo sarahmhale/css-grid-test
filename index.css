@@ -18,6 +18,7 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14;
 }
+
 .container{
   display: grid;
   grid-template-columns: 15% 1fr 1fr 15%;
@@ -27,6 +28,18 @@ p {
   "greyBackgroundLeft project project greyBackgroundRight"
   ". contact contact .";
 
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-areas:
+    "header header header header"
+    ". aboutMe aboutMe ."
+    "greyBackgroundLeft project project greyBackgroundRight"
+    ". contact contact .";
+  }
 }
 
 .contact h1 {
@@ -41,6 +54,12 @@ p {
   width: 60px;
 }
 
+.menu img {
+
+  height: 20px;
+  width: 20px;
+}
+
 .header {
   grid-area: header;
 }
@@ -51,20 +70,24 @@ p {
   height: auto;
 }
 .aboutMe {
-  grid-area: aboutMe ;
+  grid-area: aboutMe;
   margin: 100px;
 }
 
+
+
 .aboutText {
-  float:left;
-  width: 40%;
+  width: 100%;
 }
 
 .aboutText h1{
   margin-bottom:10px;
 }
+
+
+
 .aboutImage {
-  float:right;
+
   width: 50%;
   height: auto;
 
@@ -93,8 +116,27 @@ p {
   grid-template-rows: 1fr;
   grid-template-areas:
     ". projectImage projectText .";
+}
+
+@media screen and (max-width: 1200px) {
+
+
+  .projectItem {
+    background-color: white;
+    display: grid;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-gap: 30px;
+    grid-template-columns: 40px 0.8fr 1.2fr 40px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+     ". projectImage projectImage ."
+      ". projectText projectText .";
+  }
 
 }
+
 .greyBackgroundRight {
   grid-area: greyBackgroundRight;
   background-color: #F7F8F8;
