@@ -7,7 +7,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 });
 
 $(window).scroll(function () {
-if ($(window).scrollTop() >= 50) {
+
+if ($(window).scrollTop() >= 1) {
 $('.menu').css({'background':'rgba(255,255,255,0.9)', 'padding':'5'});
 } else {
 $('.menu').css('background','transparent');

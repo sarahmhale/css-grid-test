@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +6,9 @@
 h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 24;
+  text-align: center;
 }
+
 h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24;
@@ -19,26 +19,17 @@ p {
   font-size: 14;
 }
 
-.container{
+.container {
   display: grid;
-  grid-template-columns: 15% 1fr 1fr 15%;
-  grid-template-areas:
-  "header header header header"
-  ". aboutMe aboutMe ."
-  "greyBackgroundLeft project project greyBackgroundRight"
-  ". contact contact .";
-
+  grid-template-columns: 1fr 450px 450px 1fr;
+  grid-template-areas: "header header header header" ". aboutMe aboutMe ." "greyBackgroundLeft project project greyBackgroundRight" ". contact contact .";
 }
 
-@media screen and (max-width: 600px) {
-  .container{
+@media screen and (max-width: 920px) {
+  .container {
     display: grid;
     grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-areas:
-    "header header header header"
-    ". aboutMe aboutMe ."
-    "greyBackgroundLeft project project greyBackgroundRight"
-    ". contact contact .";
+    grid-template-areas: "header header header header" ". aboutMe aboutMe ." "greyBackgroundLeft project project greyBackgroundRight" ". contact contact .";
   }
 }
 
@@ -49,13 +40,12 @@ p {
 }
 
 .contact img {
-  padding:10px;
+  padding: 10px;
   height: 60px;
   width: 60px;
 }
 
 .menu img {
-
   height: 20px;
   width: 20px;
 }
@@ -64,33 +54,53 @@ p {
   grid-area: header;
 }
 
+
 .header img {
   max-width: 100%;
   max-height: 100vh;
   height: auto;
 }
-.aboutMe {
-  grid-area: aboutMe;
-  margin: 100px;
+@media screen and (max-width: 600px) {
+  .aboutMe {
+    grid-area: aboutMe;
+  }
 }
 
-
-
+.aboutMe {
+  grid-area: aboutMe;
+  padding: 40px;
+}
 .aboutText {
   width: 100%;
 }
 
-.aboutText h1{
-  margin-bottom:10px;
+
+.aboutP {
+  width: 100%;
 }
 
+.aboutText h1 {
+  margin-bottom: 10px;
+}
 
+.aboutImageContainer {
+  text-align: center;
+}
 
 .aboutImage {
-
-  width: 50%;
+  border-radius: 50%;
   height: auto;
+  width: 30%;
+  padding: 20px;
+}
 
+@media screen and (max-width: 600px) {
+  .aboutImage {
+    border-radius: 50%;
+    height: auto;
+    width: 60%;
+    padding: 20px;
+  }
 }
 
 .project {
@@ -100,10 +110,13 @@ p {
   grid-area: project;
 }
 
-.project h1{
+.project h1 {
   display: flex;
   justify-content: center;
 }
+
+
+
 
 .projectItem {
   background-color: white;
@@ -114,28 +127,9 @@ p {
   grid-gap: 30px;
   grid-template-columns: 40px 0.8fr 1.2fr 40px;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    ". projectImage projectText .";
+  grid-template-areas: ". projectImage projectImage ." ". projectText projectText .";
 }
 
-@media screen and (max-width: 1200px) {
-
-
-  .projectItem {
-    background-color: white;
-    display: grid;
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    grid-gap: 30px;
-    grid-template-columns: 40px 0.8fr 1.2fr 40px;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-     ". projectImage projectImage ."
-      ". projectText projectText .";
-  }
-
-}
 
 .greyBackgroundRight {
   grid-area: greyBackgroundRight;
@@ -165,8 +159,9 @@ p {
   width: 100%;
   grid-area: projectText;
 }
+
 .projectText h2 {
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 .menu {
   padding-top: 15px;
@@ -174,17 +169,37 @@ p {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  background-color: rgba(255,255,255,0.9);
   position: fixed;
   top: 0;
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+.menu {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+}
 
-.menu a{
+.menu a {
   font-family: 'Josefin Sans', sans-serif;
   padding: 20px;
   font-size: 24px;
   color: black;
   text-decoration: none;
+}
 
+@media screen and (max-width: 600px) {
+  .menu a {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+  }
 }
