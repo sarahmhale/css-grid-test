@@ -129,7 +129,19 @@ p {
   grid-template-rows: 1fr;
   grid-template-areas: ". projectImage projectImage ." ". projectText projectText .";
 }
-
+@media screen and (max-width: 600px) {
+.projectItem {
+    background-color: white;
+    display: grid;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    grid-gap: 30px;
+    grid-template-columns: 15px 0.8fr 1.2fr 15px;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". projectImage projectImage ." ". projectText projectText .";
+  }
+}
 
 .greyBackgroundRight {
   grid-area: greyBackgroundRight;
