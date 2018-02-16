@@ -18,6 +18,26 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14;
 }
+a{
+  color:#ea6060;
+}
+
+a:link {
+
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
 
 .container {
   display: grid;
@@ -32,6 +52,55 @@ p {
     grid-template-areas: "header header header header" ". aboutMe aboutMe ." "greyBackgroundLeft project project greyBackgroundRight" ". contact contact .";
   }
 }
+.menu {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+.menu {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+}
+
+.menu a {
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 20px;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu a {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+  }
+}
+
+
+.header {
+  grid-area: header;
+}
+
+.header img {
+  max-width: 100%;
+  max-height: 100vh;
+  height: auto;
+}
 
 .contact h1 {
   display: flex;
@@ -45,21 +114,8 @@ p {
   width: 60px;
 }
 
-.menu img {
-  height: 20px;
-  width: 20px;
-}
-
-.header {
-  grid-area: header;
-}
 
 
-.header img {
-  max-width: 100%;
-  max-height: 100vh;
-  height: auto;
-}
 @media screen and (max-width: 600px) {
   .aboutMe {
     grid-area: aboutMe;
@@ -103,6 +159,15 @@ p {
   }
 }
 
+#left {
+    float:left;
+    margin-right: 10px;
+
+}
+#right {
+    float: left;
+}
+
 .project {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -114,8 +179,6 @@ p {
   display: flex;
   justify-content: center;
 }
-
-
 
 
 .projectItem {
@@ -134,7 +197,7 @@ p {
     background-color: white;
     display: grid;
     margin-top: 40px;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 40px;
     grid-gap: 10px;
     grid-template-columns: 15px 0.8fr 1.2fr 15px;
@@ -174,44 +237,4 @@ p {
 
 .projectText h2 {
   margin-bottom: 10px;
-}
-.menu {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-@media screen and (max-width: 600px) {
-.menu {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-}
-}
-
-.menu a {
-  font-family: 'Josefin Sans', sans-serif;
-  padding: 20px;
-  font-size: 24px;
-  color: black;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 600px) {
-  .menu a {
-    font-family: 'Josefin Sans', sans-serif;
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 14px;
-    color: black;
-    text-decoration: none;
-  }
 }
